@@ -40,8 +40,10 @@ The gameplay is beginner levels, so enjoy it!!!!!\
 
 
 
-
-CHEAT CODE: We declared our mysterious by the name `Dr.D`
+#
+#
+#
+CHEAT CODE: We declared our Mysteriousness by the name `Dr.D`
 
 
 
