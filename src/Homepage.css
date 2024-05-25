@@ -1,0 +1,92 @@
+.bg
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.myPage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.title
+{
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    font-family: Courier New, monospace;
+    margin-right: 20px;
+    
+   
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container h2
+{
+    
+    text-align: center;
+    text-transform: uppercase;
+	font-size: 25px;
+    font-family: Noto Sans, sans-serif;
+    width:500px;
+    height:50px;
+    margin: 10px;
+    border-radius: 20px;
+    line-height: 50px;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+
+.container h2:hover{
+   
+    cursor: pointer;
+    box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.63);
+    margin: 5px;
+    transform: scale(1.1);
+    border: 3px dashed blue;
+}
+.modal
+{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    
+   
+}
+.modal-content
+{
+    font-family: Courier New, monospaces;
+    font-weight: 100;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+    width: 500px;
+    height: 400px;
+    border-radius: 30px 0  20px 0;
+    background-color: rgb(193, 189, 164);
+    box-shadow: 10px 10px 5px black;
+
+}
+p span{
+    font-weight: bold;
+}

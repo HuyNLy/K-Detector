@@ -1,0 +1,115 @@
+[
+    {
+        "desc":"A man with red hair and black circles around his eyes. He has seen wrapped in a scarf, bracing against the cold wind.",
+        "hair":"tomato",
+        "eyes":"tired",
+        "shirt":"scarf"
+    },
+    {
+        "desc":"A man with chestnut brown hair and emerald green eyes. Last seen wearing a raincoat, he has suspected of a series of thefts during rainy days.",
+        "hair":"brown",
+        "eyes":"green",
+        "shirt":"raincoat"
+    },
+    {
+        "desc":"A man with graying hair and exhausted, weary eyes. Known for his apron, he has become the talk of the town. Whispers of food tampering incidents follow him, casting a shadow of doubt over his actions. The mystery continues to unfold.",
+        "hair":"darkgrey",
+        "eyes":"tired",
+        "shirt":"apron"
+    },
+    {
+        "desc":"A bald man with both eyes radiating anger. His gaze is intimidating, and the absence of any scars only adds to his enigmatic persona. He's often seen in a yellow shirt and red scarf, a stark contrast to the danger he represents. He has known to have ties with the underworld.",
+        "hair":"transparent",
+        "eyes":"angry",
+        "shirt":"scarf"
+    },
+    {
+        "desc":"A man with golden hair that glows eerily and blue eyes that hold an icy, unreadable gaze. He hass seen wearing a black hoodie, his figure shrouded in shadows.",
+        "hair":"gold",
+        "eyes":"CornflowerBlue",
+        "shirt":"hoodie"
+    },
+    {
+        "desc":"A man with tomato-red dyed hair and black eyes that seem to swallow the light around them. He's seen wearing an apron, stained with substances best left unidentified. His presence at the crime scene sends a chill down your spine, hinting at his possible involvement in a series of unsolved murders.",
+        "hair":"tomato",
+        "eyes":"black",
+        "shirt":"apron"
+    },
+    {
+        "desc":"A gray eyes man with dark blue dyed hair that glows eerily under the moonlight. He's known to leave a scarf at the scene of each crime, a signature move that has baffled investigators and earned him notoriety in the underworld.",
+        "hair":"royalblue",
+        "eyes":"darkgray",
+        "shirt":"scarf"
+    },
+    {
+        "desc":"A black hair man with gray eyes that hold an enigmatic glint. He's dressed in a black suit, his demeanor cool and calculated. His appearance at various high-profile events has raised suspicions, leading many to believe he's a spy involved in corporate espionage.",
+        "hair":"black",
+        "eyes":"darkgray",
+        "shirt":"suit"
+    },
+    {
+        "desc":"A figure with hair the color of a midnight sky. His eyes, hidden behind glasses, are as unreadable as a coded message. He's often seen in a raincoat, blending with the shadows and the downpour, making him a phantom in the crowd.",
+        "hair":"black",
+        "eyes":"glasses",
+        "shirt":"raincoat"
+    },
+    {
+        "desc":"In the heart of the city, a man of mystery resides. One of his eyes bears a scar, giving him a fearsome appearance. His hair, a vibrant orange, stands out like a defiant flame in a monochrome world. Dressed in a school uniform, he blends into the urban jungle, appearing and disappearing with an air of intrigue. He is a riddle waiting to be solved",
+        "hair":"orange",
+        "eyes":"scar",
+        "shirt":"uniform"
+    },
+    {
+        "desc":"We are on the lookout for a man with teal dyed hair and small eyes. He has often seen in a black hoodie, his muscular build suggesting regular gym visits. He’s known to frequent Area C around midnight, a pattern observed consistently before each crime occurrence. His involvement in the recent incidents is suspected, and any information leading to his whereabouts is appreciated. Please report any sightings to the local authorities. Stay safe.",
+        "hair":"teal",
+        "eyes":"small",
+        "shirt":"hoodie"
+    },
+    {
+        "desc":"We are currently tracking a man with dark green hair and red eyes. He's known to work at a restaurant and is often seen wearing his uniform in public. He was identified as a relative of Ms. K, but he has been missing for the last 3 days.",
+        "hair":"forestgreen",
+        "eyes":"red",
+        "shirt":"apron"
+    },
+    {
+        "desc":"A resident provided a description of a man with blonde hair and glasses. He has seen in black clothing, which makes him blend into the night. He was spotted entering a residential area at midnight. However, due to the low light conditions, his features were not clearly captured by the surveillance cameras",
+        "hair":"gold",
+        "eyes":"glasses",
+        "shirt":"hoodie"
+    },
+    {
+        "desc":"A brown hair student has been reported missing in Area F. He had been laboring excessively at a local factory, where he was subjected to harsh and exploitative conditions. Last seen on a rainy day, his sudden disappearance has heightened concerns within the community.",
+        "hair":"brown",
+        "eyes":"tired",
+        "shirt":"raincoat"
+    },
+
+    {
+        "desc":"A man known only as \"The Phantom\" has vanished without a trace. The Phantom is easily recognizable with his neon pink hair. He was last seen wearing a bright safety vest, an unusual choice of attire that somehow added to his enigmatic persona. His odd hours and secretive nature raised eyebrows. Then, a series of unexplained events began to occur - strange noises in the night, missing items, and a chilling sense of being watched under those green eyes. The Phantom remains elusive. His sudden disappearance has only deepened the mystery surrounding him.",
+        "hair":"pink",
+        "eyes":"green",
+        "shirt":"safetyVest"
+    },
+    
+    
+    {
+        "desc":"\"Who is it?!  Doctor ---! You lo--k soo scary in --dark. I thought your --eyes are no--t that red? W-ait, you aren't-- my doc--tor, m-y doctor does-n-ot hav-ee light blu--e h-air\"",
+        "hair":"lightskyblue",
+        "eyes":"red",
+        "shirt":"whiteCoat"
+    }
+    ,
+    {
+        "desc":"The camera was broken, but there is a witness who said that she saw a young man from her window in white...hmmm...He had big eyes... and in hurry, ...He carried a heavy black bag from that house and drove away....  \"I believe his hair is not dyed, but not blonde nor red.\"",
+        "hair":"black",
+        "eyes":"angry",
+        "shirt":"uniform"
+    }
+    ,
+    {
+        "desc":"My friend was retired last month, but he told me how happy he was. Moreover, he told me that he started school crossing guard last week. He loves those kids so much, and he happily told me about that even though we just know each other last month month. John even told me about his wife passed away and he lived like this, no children, no wife just work in 50 years. It seems like that he does not have any relatives or friends except me. Anyway..... The last message that I received was\"help me!\" from him, I hope he will be safe. ",
+        "hair":"white",
+        "eyes":"small",
+        "shirt":"safetyVest"
+    }
+]
