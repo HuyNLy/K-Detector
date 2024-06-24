@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import './Homepage.css'; 
 import { useNavigate } from 'react-router-dom';
 import IMG from './img/img.js';
-
+import mouseClick from './sound/mouseClick.mp3';
 
 const Homepage = (props) => {
+    function playSound() {
+        const audio = new Audio(mouseClick);
+        audio.play().catch((error) => console.log(error));
+    };
+    
     const navigate = useNavigate();
     const goToProfile = () => {
         navigate('/Main'); // Navigate to Main page
@@ -29,9 +34,10 @@ const Homepage = (props) => {
                 </div>
 
                 <div className="container">
-                    <h2 onClick={() => openModal('about')}>About</h2>
-                    <h2 onClick={() => openModal('notice')}>Notice</h2>
-                    <h2 onClick={goToProfile}>Start</h2> 
+                    
+                    <h2 onMouseEnter={playSound} onClick={() => {playSound(); openModal('about');}}>About</h2>
+                    <h2 onMouseEnter={playSound} onClick={() => {playSound(); openModal('notice');}}>Notice</h2>
+                    <h2 onMouseEnter={playSound} onClick={()=>{playSound(); goToProfile();}}>Start</h2> 
                     
                     
                 </div>

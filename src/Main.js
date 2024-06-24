@@ -3,9 +3,20 @@ import { useState, useEffect } from 'react';
 import IMG from './img/img.js';
 import Clue from './document.json';
 
+
 import Confetti from 'react-confetti';
 
 const Main =()=>{
+    let creepyAudio = new Audio('https://www.myinstants.com/media//sounds/re-zero-kara-hajimeru-isekai-seikatsu-creepy-sound_FaUBaJ6.mp3');
+
+    function wrongSound ()  {
+      new Audio('https://www.myinstants.com/media/sounds/wrong.mp3').play();
+    };
+    function rightSound ()  {
+      new Audio('https://www.myinstants.com/media/sounds/generic-ka-ching.mp3').play();
+    };
+
+
     const cat = ['Hair','Eyes','Shirt','Other'];
     const [categ, setCat] =useState([]);
     const [selectedCat, setSelectedCat] = useState(null); 
@@ -81,6 +92,9 @@ const Main =()=>{
       content.textContent = "\n A classified document detailing a secret government project involving *xxxx creatures* from void. This creature, described as having bloody red eyes and the ability to transform into human form, were subjects of covert experiments. However, something went horribly wrong. The creatures escaped, causing a *massive massacre*. The document contains chilling accounts of the incident, with descriptions of the creatures' terrifying powers and the destruction they caused. The final line reads: \"The experiment was a mistake. We've unleashed a horror we cannot contain.\"";
       content.style.textShadow =' 2px 5px 5px red';
       content.style.color ='red';
+      creepyAudio.loop= true;
+      creepyAudio.play();
+
       
       
       
@@ -207,16 +221,25 @@ const Main =()=>{
                     onClick={() => {
                         if(Kname==='Dr.D')
                         {
+                            let vic = new Audio('https://www.myinstants.com/media/sounds/ff1_victory_fanfare_1.mp3')
+                            vic.loop = true;
+                            vic.play();
                             console.log('Well done!')
                             document.querySelector('.victory').style.display = 'flex';
 
                         }
                         if (isBMode) {
+                          
                         // Code for bpaperclick mode
                         console.log('bMode!');
                         let end = document.querySelector('.gameOver')
                         end.style.display ='flex';
                         setGameOverText("Curiosity killed the cat! You are dead!");
+                        creepyAudio.pause();
+                        let audio = new Audio('https://www.myinstants.com/media/sounds/txururu.mp3')
+                        audio.loop= true
+                        audio.play();
+                       
                         } 
                         else {
                         // Code for normal (paperclick) mode
@@ -226,6 +249,7 @@ const Main =()=>{
                         if (tone === randomDoc.hair && (typeof eyes === 'string' ? eyes : eyes.value)
                             === randomDoc.eyes && shirtValue === randomDoc.shirt) 
                         {
+                            rightSound();
                             setCase(Case+1);
                             getRandomDoc();
                             setShowConfetti(true);
@@ -245,11 +269,15 @@ const Main =()=>{
                             setTimeout(() => {document.querySelector('body').style.backgroundColor = ''}, 500);
                             const child = myHp.querySelector(`:nth-child(${Lives})`);
                             child.style.filter = 'grayscale(100%)';
+                            wrongSound();
                             setLives((Lives-1)<=1? 1: Lives-1);
                             if(Lives===1)
                             {
-                            document.querySelector('.gameOver').style.display ='flex';
-                            setGameOverText(`You're fired!!! With great power comes great responsibility. Errors in your work have led to negative outcomes.`);          
+                              let audio = new Audio('https://www.myinstants.com/media/sounds/txururu.mp3')
+                              audio.loop= true
+                              audio.play();
+                              document.querySelector('.gameOver').style.display ='flex';
+                              setGameOverText(`You're fired!!! With great power comes great responsibility. Errors in your work have led to negative outcomes.`);          
                             }
                         }
                         }
@@ -265,7 +293,12 @@ const Main =()=>{
                 </div>
                     <div className='folder' style={{
                         width: folder=== IMG.ofolder ? '380px' : '50px'}}>
-                        <div><img src={folder} onClick={folderClick} alt="" /></div>
+                        <div><img src={folder} 
+                          onClick={() => {
+                              folderClick();
+                              new Audio('https://www.myinstants.com/media/sounds/page-flip-sound-effect.mp3').play();
+                          }} 
+                          alt=""  /></div>
                         <div>
                         
                         <img src={IMG.paper} onClick={paperClick} alt='' />
