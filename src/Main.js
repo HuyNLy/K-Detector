@@ -154,7 +154,9 @@ const Main =()=>{
              </p>
              <p> Farewell,</p>
              <p>Dr. D</p>
-            <button onClick={() => window.location.reload(false)}>Restart</button>
+             <button onClick={() => window.location.href = '/'}>
+                Restart
+            </button>
           </div>
   
         </div>
