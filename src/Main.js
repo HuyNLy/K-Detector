@@ -154,9 +154,10 @@ const Main =()=>{
              </p>
              <p> Farewell,</p>
              <p>Dr. D</p>
-             <button onClick={() => window.location.href = '/'}>
+             <button onClick={() => window.location.href = '/Main'}>
                 Restart
             </button>
+
           </div>
   
         </div>
