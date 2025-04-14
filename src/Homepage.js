@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import IMG from './img/img.js';
 import mouseClick from './sound/mouseClick.mp3';
 
-const Homepage = (props) => {
+const Homepage = () => {
     function playSound() {
         const audio = new Audio(mouseClick);
         audio.play().catch((error) => console.log(error));
@@ -30,7 +30,7 @@ const Homepage = (props) => {
             <div className="myPage">
                 <div>
                     <h2 className="title">K-Detector</h2>
-                    <img src={IMG.figure} alt="NO IMAGE" width={70} height={70} />
+                    <img src={IMG.figure} alt="Figure icon" width={70} height={70} />
                 </div>
 
                 <div className="container">

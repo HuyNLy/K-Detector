@@ -36,10 +36,6 @@ const Main =()=>{
       eyes: '',
       shirt: ''
     });
-  
-    useEffect(() => {
-        getRandomDoc();
-    }, []);
     
     const [clues, setClues] = useState([...Clue]);
   
@@ -89,8 +85,15 @@ const Main =()=>{
       let title = quest.querySelector('h3');
       let content = quest.querySelector('div');
       title.textContent ="Title: The Alien Experiment\n";
-      content.textContent = "\n A classified document detailing a secret government project involving *xxxx creatures* from void. This creature, described as having bloody red eyes and the ability to transform into human form, were subjects of covert experiments. However, something went horribly wrong. The creatures escaped, causing a *massive massacre*. The document contains chilling accounts of the incident, with descriptions of the creatures' terrifying powers and the destruction they caused. The final line reads: \"The experiment was a mistake. We've unleashed a horror we cannot contain.\"";
-      content.style.textShadow =' 2px 5px 5px red';
+      content.innerHTML = `
+      A classified document detailing a secret government project involving <b>xxx creatures</b> from the void. 
+      This creature, described as having bloody red eyes & the ability to transform into human form, were subjects of covert experiments. 
+      However, something went horribly wrong. The creatures escaped, causing a <b>massive massacre</b>. 
+      The document contains chilling accounts of the incident, with descriptions of the creatures' terrifying powers and the destruction they caused. 
+      The final line reads: "<em>The experiment was a mistake. We've unleashed a horror we cannot contain.</em>"
+  `;
+      content.style.textShadow =' 7px 7px 11px black ';
+      content.style.fontSize ='14px';
       content.style.color ='red';
       creepyAudio.loop= true;
       creepyAudio.play();
@@ -116,6 +119,14 @@ const Main =()=>{
         console.log('You Win!')
       }
     };
+    useEffect(() => {
+      const initializeRandomDoc = () => {
+          getRandomDoc(); // Call the public function
+      };
+  
+      initializeRandomDoc(); // Execute the wrapper function
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
     
     
     
@@ -243,7 +254,7 @@ const Main =()=>{
                         } 
                         else {
                         // Code for normal (paperclick) mode
-                        console.log('Hair:',tone,' Eyes:', (typeof eyes === 'string' ? eyes : eyes.value),'Cloth:', shirtValue);
+                        console.log(selectedValues);
                         setSelectedValues({ hair: tone, eyes: (typeof eyes === 'string' ? eyes : eyes.value), shirt: shirtValue });
 
                         if (tone === randomDoc.hair && (typeof eyes === 'string' ? eyes : eyes.value)
