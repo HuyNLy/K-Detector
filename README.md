@@ -2,13 +2,13 @@
 
 This Project is required Node.js downloading.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
-Deployment at : `https://k-detector.netlify.app/`
+Deployment at : https://k-detector.netlify.app/
 
 
 ## Available Scripts
 
 In the terminal, you can run:
-`npm install` to install all the packages
+`npm install` to install all the packages.\
 `npm start` to start
 
 
